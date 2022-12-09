@@ -1,0 +1,11 @@
+main {
+    width: 100%;
+    height: 100vh;
+}
+.textContainer{
+background-color: rgba(19, 19, 19, 0.473);
+
+}
+.textContainer> h5,p{
+    color: #FF9F1C;
+}
