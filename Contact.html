@@ -20,17 +20,21 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #CBF3F0;">
+    <!--navigation bar-->
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <span class="navbar-brand mb-0 h1">
+                <!--Page Logo-->
                 <img src="./images/cup_orange.png" alt="Logo" width="30" height="30">
             </span>
+            <!--navigation button for small screen-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!--navigation List-->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="Cupcakes.html">Cupcakes</a></li>
@@ -40,6 +44,7 @@
             </div>
         </div>
     </nav>
+    <!--main content-->
     <main>
         <section class="formSection">
             <form action="/">
@@ -52,6 +57,7 @@
                     <label for="Phone">Phone:</label><br>
                     <input type="tel" name="name" placeholder="090-12-345" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
                 </div>
+                <!--here can the user put any comment or any special requirements-->
                 <div>
                     <p>Message</p>
                     <textarea rows="4"></textarea>
@@ -63,6 +69,7 @@
                 <button type="submit" href="/">Submit</button>
             </form>
         </section>
+        <!--a map with a marker which guide the user to the shop location-->
         <section class="MapSection">
             <div id="map"></div>
         </section>
@@ -70,27 +77,33 @@
     <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
             <a class="mb-3 me-lg-2 mb-md-0 text-muted text-decoration-none lh-1">
-                <img src="./images/cup_blue.png" alt="Logo" width="30" height="30" style="margin-top: 4px;">
+                <img src="./images/cup_blue.png" alt="Logo" width="30" height="30">
             </a>
             <span class="mb-3 mb-md-0 text-muted">© 2022 Cheer Cupcake</span>
         </div>
     </footer>
     <script>
-        var map = L.map('map', { zoomControl: false }).setView([48.176, 11.512], 13);
+        // creating the map using leaflet library
+        var map = L.map('map', { zoomControl: false }).setView([48.176, 11.512], 13); // map without zoom control
+        // add base map layer
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', // base map
             {
                 maxZoom: 19,
                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
             }).addTo(map);
+        // add zoom control
         L.control.zoom({
-            position: 'bottomleft'
+            position: 'bottomleft' // set the position of the zoom control on the left bottom site
         }).addTo(map);
+        // customize the marker as cupcake
         var cupCakeIcon = L.icon({
             iconUrl: './images/cup_blue.png', // source of the icon
             iconSize: [95, 95], // size of the icon
             iconAnchor: [48.176, 11.512], // location of the icon
         });
+        // add the marker to the map
         var marker = L.marker([48.176, 11.512], { icon: cupCakeIcon }).addTo(map);
+        // add popup to the marker 
         marker.bindPopup("<b>Cheer Cupcake</b><br><b>Hugo-Troendle-Straße</b><br>come to us.").openPopup();
     </script>
 </body>

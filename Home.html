@@ -3,105 +3,124 @@
 
 <head>
     <title>Cheer Cupcake</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <!-- icon-->
     <link rel="shortcut icon" href="./images/icon.png" width="50px" height="50px" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- bootstrap CDN-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!--main style-->
-    <link href="Home.css" rel="stylesheet">
-    <link href="ButtomTop.css" rel="stylesheet">
+    <link href="Home.css" rel="stylesheet" />
+    <link href="ButtomTop.css" rel="stylesheet" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #CBF3F0;">
+    <!--navigation bar-->
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <span class="navbar-brand mb-0 h1">
-                <img src="./images/cup_orange.png" alt="Logo" width="30" height="30">
+                <!--Page Logo-->
+                <img src="./images/cup_orange.png" alt="Logo" width="30" height="30" />
             </span>
+            <!--navigation button for small screen-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!--navigation List-->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="Home.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Cupcakes.html">Cupcakes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cupcakes.html">Cupcakes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!--main content-->
     <main>
         <div class="grid-item">
-            <img src="./images/home_img_1.jpg" alt="Home img 1">
+            <img src="./images/home_img_1.jpg" alt="Home img 1" />
         </div>
         <div class="grid-item text-content">
             <div>
-                <h5> WELCOME TO Cheer Cupcakes!</h5>
-                <p> We combine patisserie art at star level with an extra portion of
+                <h5>WELCOME TO Cheer Cupcakes!</h5>
+                <p>
+                    We combine patisserie art at star level with an extra portion of
                     passion and a lot of attention to detail. We are infatuated with
                     sweets,we love eggs and butter and sugar and cream. We create little
-                    works of art from them to our heart's content and according to individual
-                    preferences,which taste as good as they look. We like to reinterpret,
-                    because what's good can always be better.
+                    works of art from them to our heart's content and according to
+                    individual preferences,which taste as good as they look. We like to
+                    reinterpret, because what's good can always be better.
                 </p>
             </div>
         </div>
         <div class="grid-item text-content">
             <div>
                 <h5>WE ARE Cheer!</h5>
-                <p> We are Reem and Mohammed. We learned our trade in star
-                    gastronomy, but our passion for sweets is innate. We are
-                    convinced and never tire of giving shape and taste to our
-                    ideas. Everything can, nothing must and so in our small
-                    creative bakery constantly new creations and modern
-                    interpretations of sweet classics. Always in small form, always
-                    cleverly composed and decorated with dedication.
+                <p>
+                    We are Reem and Mohammed. We learned our trade in star gastronomy,
+                    but our passion for sweets is innate. We are convinced and never
+                    tire of giving shape and taste to our ideas. Everything can, nothing
+                    must and so in our small creative bakery constantly new creations
+                    and modern interpretations of sweet classics. Always in small form,
+                    always cleverly composed and decorated with dedication.
                 </p>
             </div>
         </div>
         <div class="grid-item">
-            <img src="./images/home_img_2.jpg" alt="Home img 2">
+            <img src="./images/home_img_2.jpg" alt="Home img 2" />
         </div>
         <div class="grid-item">
-            <img src="./images/home_img_3.jpg" alt="Home img 3">
+            <img src="./images/home_img_3.jpg" alt="Home img 3" />
         </div>
         <div class="grid-item text-content">
             <div>
                 <h5>Enjoy Our Freshy Cupcakes with coffee</h5>
-                <p>We are committed to using fresh, high end, local ingredients
-                    and proudly serve locally roasted Joe Van Gogh coffee and
-                    espresso. The shop boasts a beautiful, light filled cafe where
-                    you can enjoy a croissant warm from the oven with your
-                    espresso, or you can take your treats to our patio and enjoy
-                    the outdoors with your dessert both day and night.
+                <p>
+                    We are committed to using fresh, high end, local ingredients and
+                    proudly serve locally roasted Joe Van Gogh coffee and espresso. The
+                    shop boasts a beautiful, light filled cafe where you can enjoy a
+                    croissant warm from the oven with your espresso, or you can take
+                    your treats to our patio and enjoy the outdoors with your dessert
+                    both day and night.
                 </p>
             </div>
         </div>
+        <!--Navigation to the Top button-->
         <button onclick="topFunction()" id="btnTop" title="Go to top">Top</button>
     </main>
-    <footer class="d-flex flex-wrap justify-content-center align-items-center py-3  border-top">
+    <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 border-top">
         <div class="col-md-4 d-flex align-items-center">
             <a class="mb-3 me-lg-2 mb-md-0 text-muted text-decoration-none lh-1">
-                <img src="./images/cup_blue.png" alt="Logo" width="30" height="30" style="margin-top: 4px;">
+                <img src="./images/cup_blue.png" alt="Logo" width="30" height="30" />
             </a>
             <span class="mb-3 mb-md-0 text-muted">© 2022 Cheer Cupcake</span>
         </div>
     </footer>
     <script>
-        // Get the button
+        // Get the Navigation to the Top button
         let mybutton = document.getElementById("btnTop");
 
         // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
+        window.onscroll = function () {
+            scrollFunction();
+        };
 
         function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
                 mybutton.style.display = "block";
             } else {
                 mybutton.style.display = "none";

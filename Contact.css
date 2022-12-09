@@ -1,3 +1,6 @@
+nav{
+    background-color: #CBF3F0;
+}
 h1 {
     margin: 0 0 20px;
     font-weight: 400;
@@ -59,3 +62,7 @@ form {
 #map { height: 200px;
    
  }
+ 
+ footer>div>a>img{
+    margin-top: 4px;
+}

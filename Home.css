@@ -1,3 +1,7 @@
+nav {
+    background-color: #CBF3F0;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -41,4 +45,8 @@ main {
 
 footer {
     margin: 0;
+}
+
+footer>div>a>img {
+    margin-top: 4px;
 }

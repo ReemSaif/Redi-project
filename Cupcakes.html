@@ -16,17 +16,21 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #CBF3F0;">
+    <!--navigation bar-->
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <span class="navbar-brand mb-0 h1">
+                <!--Page Logo-->
                 <img src="./images/cup_orange.png" alt="Logo" width="30" height="30">
             </span>
+            <!--navigation button for small screen-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!--navigation List-->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" aria-current="page"
@@ -36,6 +40,7 @@
             </div>
         </div>
     </nav>
+    <!--main content-->
     <main class="container">
         <div class="grid-item">
             <img src="./images/mango.jpg" alt="mango">
@@ -107,18 +112,19 @@
                 <button type="button" class="btn btn-outline-primary">Order</button>
             </div>
         </div>
+        <!--Navigation to the Top button-->
         <button onclick="topFunction()" id="btnTop" title="Go to top">Top</button>
     </main>
     <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
             <a class="mb-3 me-lg-2 mb-md-0 text-muted text-decoration-none lh-1">
-                <img src="./images/cup_blue.png" alt="Logo" width="30" height="30" style="margin-top: 4px;">
+                <img src="./images/cup_blue.png" alt="Logo" width="30" height="30">
             </a>
             <span class="mb-3 mb-md-0 text-muted">© 2022 Cheer Cupcake</span>
         </div>
     </footer>
     <script>
-        // Get the button
+        // Get the Navigation to the Top button
         let mybutton = document.getElementById("btnTop");
 
         // When the user scrolls down 20px from the top of the document, show the button
