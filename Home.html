@@ -13,6 +13,7 @@
 
     <!--main style-->
     <link href="Home.css" rel="stylesheet">
+    <link href="ButtomTop.css" rel="stylesheet">
 </head>
 
 <body>
@@ -36,70 +37,55 @@
         </div>
     </nav>
     <main>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="./images/home_img_1.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block textContainer">
-                        <h5> WELCOME TO Cheer Cupcakes!</h5>
-                        <p> We combine patisserie art at star level with an extra portion of
-                            passion and a lot of attention to detail. We are infatuated with
-                            sweets,we love eggs and butter and sugar and cream. We create little
-                            works of art from them to our heart's content and according to individual
-                            preferences,which taste as good as they look. We like to reinterpret,
-                            because what's good can always be better.
-                        </p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="./images/home_img_2.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block textContainer">
-                        <h5>WE ARE Cheer!</h5>
-                        <p> We are Reem and Mohammed. We learned our trade in star
-                            gastronomy, but our passion for sweets is innate. We are
-                            convinced and never tire of giving shape and taste to our
-                            ideas. Everything can, nothing must and so in our small
-                            creative bakery constantly new creations and modern
-                            interpretations of sweet classics. Always in small form, always
-                            cleverly composed and decorated with dedication.
-                        </p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/home_img_3.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block textContainer">
-                        <h5>Enjoy Our Freshy Cupcakes with coffee</h5>
-                        <p>We are committed to using fresh, high end, local ingredients
-                            and proudly serve locally roasted Joe Van Gogh coffee and
-                            espresso. The shop boasts a beautiful, light filled cafe where
-                            you can enjoy a croissant warm from the oven with your
-                            espresso, or you can take your treats to our patio and enjoy
-                            the outdoors with your dessert both day and night.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        <div class="grid-item">
+            <img src="./images/home_img_1.jpg" alt="Home img 1">
         </div>
+        <div class="grid-item text-content">
+            <div>
+                <h5> WELCOME TO Cheer Cupcakes!</h5>
+                <p> We combine patisserie art at star level with an extra portion of
+                    passion and a lot of attention to detail. We are infatuated with
+                    sweets,we love eggs and butter and sugar and cream. We create little
+                    works of art from them to our heart's content and according to individual
+                    preferences,which taste as good as they look. We like to reinterpret,
+                    because what's good can always be better.
+                </p>
+            </div>
+        </div>
+        <div class="grid-item text-content">
+            <div>
+                <h5>WE ARE Cheer!</h5>
+                <p> We are Reem and Mohammed. We learned our trade in star
+                    gastronomy, but our passion for sweets is innate. We are
+                    convinced and never tire of giving shape and taste to our
+                    ideas. Everything can, nothing must and so in our small
+                    creative bakery constantly new creations and modern
+                    interpretations of sweet classics. Always in small form, always
+                    cleverly composed and decorated with dedication.
+                </p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="./images/home_img_2.jpg" alt="Home img 2">
+        </div>
+        <div class="grid-item">
+            <img src="./images/home_img_3.jpg" alt="Home img 3">
+        </div>
+        <div class="grid-item text-content">
+            <div>
+                <h5>Enjoy Our Freshy Cupcakes with coffee</h5>
+                <p>We are committed to using fresh, high end, local ingredients
+                    and proudly serve locally roasted Joe Van Gogh coffee and
+                    espresso. The shop boasts a beautiful, light filled cafe where
+                    you can enjoy a croissant warm from the oven with your
+                    espresso, or you can take your treats to our patio and enjoy
+                    the outdoors with your dessert both day and night.
+                </p>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="btnTop" title="Go to top">Top</button>
     </main>
-    <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+    <footer class="d-flex flex-wrap justify-content-center align-items-center py-3  border-top">
         <div class="col-md-4 d-flex align-items-center">
             <a class="mb-3 me-lg-2 mb-md-0 text-muted text-decoration-none lh-1">
                 <img src="./images/cup_blue.png" alt="Logo" width="30" height="30" style="margin-top: 4px;">
@@ -107,6 +93,27 @@
             <span class="mb-3 mb-md-0 text-muted">© 2022 Cheer Cupcake</span>
         </div>
     </footer>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("btnTop");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 </html>

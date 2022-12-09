@@ -1,11 +1,44 @@
 main {
-    width: 100%;
-    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-.textContainer{
-background-color: rgba(19, 19, 19, 0.473);
 
+@media only screen and (max-width: 700px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item {
+        font-size: 10px;
+    }
 }
-.textContainer> h5,p{
-    color: #FF9F1C;
+
+.grid-item {
+    border: 1px solid #DCDCDC;
+    transition: 0.3s;
+    font-size: 15px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.grid-item>img {
+    width: 100%;
+    height: auto;
+}
+
+.grid-item>div>p {
+    color: #808080;
+}
+
+.text-content {
+    display: grid;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+footer {
+    margin: 0;
 }

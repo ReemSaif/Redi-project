@@ -20,12 +20,12 @@
 
 .grid-item {
     justify-self: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: #cbf3f0ca;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     padding: 20px;
     font-size: 30px;
+    font-family: 'Brush Script MT', cursive;
     text-align: center;
 }
 
@@ -46,4 +46,7 @@
 
 .product{
     margin-top: 5px;
+}
+.product>h4{
+    color: #808080;
 }
